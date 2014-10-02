@@ -1,14 +1,28 @@
-var button = $('.sales');
-var sales__details = $('.sales__details');
+var sales1 = $('.sales1');
+var sales2 = $('.sales2');
+var salesDetails1 = $('.sales__details1');
+var salesDetails2 = $('.sales__details2');
 
-var buttonClickHandler = function () {
-    var currentState = sales__details.attr('data-state');
+
+var buttonClickHandler1 = function () {
+    var currentState = salesDetails1.attr('data-state');
                                    
   if (currentState == 'active') {
-    sales__details.attr('data-state', 'inactive');
+    salesDetails1.attr('data-state', 'inactive');
   } else {
-    sales__details.attr('data-state', 'active');
+    salesDetails1.attr('data-state', 'active');
   }
 };
 
-button.on('click', buttonClickHandler);
+var buttonClickHandler2 = function () {
+    var currentState = salesDetails2.attr('data-state');
+                                   
+  if (currentState == 'active') {
+    salesDetails2.attr('data-state', 'inactive');
+  } else {
+    salesDetails2.attr('data-state', 'active');
+  }
+};
+
+sales1.on('click', buttonClickHandler1);
+sales2.on('click', buttonClickHandler2);
