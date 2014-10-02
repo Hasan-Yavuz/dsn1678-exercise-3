@@ -87,7 +87,6 @@ body {
   padding: 2em;
   position: absolute;
   width: 90%;
-  display: none;
   opacity: 0;
 
   background-color: #000;
@@ -95,12 +94,7 @@ body {
   transition: all 500ms ease;
 }
 
-.sales__details1[data-state="active"] {
-    opacity: 1;
-    margin-top: 0;
-}
-
-.sales__details2[data-state="active"] {
+.sales__details[data-state="active"] {
     opacity: 1;
     margin-top: 0;
 }
